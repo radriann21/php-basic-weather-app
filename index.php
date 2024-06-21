@@ -9,10 +9,23 @@
 <body>
   
   <main class="max-w-full min-h-screen flex items-center justify-center">
-    <article class="w-[40%] h-[430px] bg-red-700">
-      
+    <article class="w-[70%] md:w-[40%] h-[430px] rounded-md shadow-md flex items-center flex-col p-4 space-y-8">
+      <h2 class="font-semibold text-xl">Weather App</h2>
+
+      <section class="w-full text-center flex items-center justify-center flex-col">
+        <h3 id="place" class="font-bold text-lg underline underline-offset-2"></h3>
+
+        <section>
+          <h4 class="capitalize" id="description"></h4>
+          <img class="mx-auto" id="icon" src="" alt="" />
+          <span class="block" id="temp"></span>
+          <span id="feelsLike"></span>
+        </section>
+
+      </section>
     </article>
   </main>
 
+  <script defer src="/script.js"></script>
 </body>
 </html>
